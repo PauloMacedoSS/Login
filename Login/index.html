@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Helper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Importação de fonts do google fonts para serem usadaas no projeto-->
+    <script src="https://kit.fontawesome.com/85e6913f4b.js" crossorigin="anonymous" defer></script>
+    <!--O atributo defer serve para que o site seja carregado primeiro e depois ele carrega o arquivo js-->
+    <!--Há também o async que faz o carregamento assincrono, que faz o carregamento do conteudo todo junto-->
+    <!--Estou utilizando a extensão live sercver do vscode. Executo ela usando ctrl+shift+p->Live server->open with live server-->
+</head>
+<body>
+
+    <header>
+        <h1>Login-Helper</h1>
+    </header>
+
+    <main>
+        <form>
+            <section class="inputs-container">
+                <input type="email" placeholder="exemple@gmail.com">
+
+                <div class="password-container">
+                    <input type="password" id="field-password" class="field-password" placeholder="*******">
+                    <i class="fa-solid fa-eye" id="eye" onclick="showPass()"></i>
+                    <i class="fa-solid fa-eye-low-vision" id="eye-low" onclick="showPass()"></i>
+                </div>
+                <!--Para criar uma classe já com a tag, só basta colocar nomedatag.nomedaclasse(obs: Se for colocado somente .nomedaclasse, será gerada uma div por padrão.)-->
+            </section>
+
+            <section class="password-info">
+                <div>
+                    <input type="checkbox">
+                    <span>Lembrar senha?</span>
+                </div>
+
+                <a href="#">esqueceu sua senha?</a>
+            </section>
+
+            <button id="btn-login">Login</button>
+
+            <section class="links-container">
+                <span>Ou entre com:</span>
+
+                <aside>
+                    <a href=""><i class="fa-brands fa-google google"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-square facebook"></i></a>
+                </aside>
+
+            </section>
+
+            <!--É possivel criar uma tag reptidas vezes, no vscode, utilizando nomedatag*número de  tags desejadas-->
+
+            <footer>
+                <hr>
+                <span>Ainda não tem uma conta? <a href="#">Cadastre-se</a></span>
+            </footer>
+        </form>
+    </main>
+
+</body>
+</html>
